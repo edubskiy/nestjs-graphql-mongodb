@@ -1,7 +1,6 @@
 import { Resolver, Query, Mutation, Args, ResolveField } from '@nestjs/graphql';
 import { LessonType } from './lesson.type';
 import { LessonService } from './lesson.service';
-import { start } from 'repl';
 import { CreateLessonInput } from './lesson.input';
 
 @Resolver(of => LessonType)
