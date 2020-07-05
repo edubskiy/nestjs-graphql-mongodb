@@ -5,10 +5,6 @@ import { MinLength, IsDateString } from 'class-validator';
 export class CreateStudentInput {
   @MinLength(1)
   @Field()
-  name: string;
-
-  @MinLength(1)
-  @Field()
   firstName: string;
 
   @MinLength(1)

@@ -10,5 +10,7 @@ export class StudentResolver {
   @Mutation(returns => StudentType)
   createStudent(
     @Args('createStudentInput') createStudentInput: CreateStudentInput,
-  ) {}
+  ) {
+    return this.studentService.createStudent(createStudentInput);
+  }
 }
